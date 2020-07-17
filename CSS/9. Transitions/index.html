@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box{
+            font-size: 40px;
+            background-color: wheat;
+            color: red;
+            transition: all .5s ease-in-out; /* ease-in-out스르륵 바뀌는 효과 */
+        }
+        .box:hover{
+           background-color: royalblue;
+           color:white;
+            /* hover: 마우스 가져다 대면 바뀌는 효과 
+               active: 마우스 클릭해야 바뀌는 효과*/
+        }
+    </style>
+</head>
+<body>
+    <span class="box">
+        Text
+    </span>
+</body>
+</html>

@@ -1,0 +1,12 @@
+selector {
+    propert-name: value;
+    propert-name: value;
+    propert-name: value;
+    propert-name: value;
+    propert-name: value;
+}
+selector(id, 클래스, 태그 이름){
+    propert-name: value;
+}
+혹은 .클래스, #ID 이렇게 쓸수도 있다
+태그 .클래스 이렇게 두개 작성 가능

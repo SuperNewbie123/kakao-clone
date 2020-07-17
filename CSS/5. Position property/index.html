@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body, html{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: cadetblue;
+        }
+        body{
+            height: 400%;
+            background-color: coral;
+        }
+        #boxOne{
+            background-color: cornflowerblue;
+            width: 400px;
+            height: 400px;
+            position: static; /*디폴트값*/
+        }
+        #boxTwo{
+            background-color: chocolate;
+            width: 400px;
+            height: 400px;
+            position: fixed; /*윈도우에 고정 스크롤 움직여도 따라옴 */
+        }
+        .abs-box{
+            width: 400px;
+            height: 400px;
+            background-color: yellowgreen;
+            position: relative; /* 상대적 포지셔닝 */
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: absolute; /* 부모 상응해서 내가 설정한 값으로 적용된다 지금같은경우
+            부모랑 상응하는게 없어 부모 박스 밖으로 적용 (non relatiive시)*/
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+  <!--   <div id="boxOne">
+        <di class="box-hild"></di>
+    </div>
+    <div id="boxTwo">
+        <di class="box-hild"></di>
+    </div> -->
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+</body>
+</html>

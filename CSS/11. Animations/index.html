@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: violet;
+           animation: 2.5s abc infinite ease-in-out;
+        }
+        
+       @keyframes abc{
+           0%{ /* 트랜스폼이 없는 상태에서 */
+               transform: none;
+           }
+           50%{ /* 트랜스폼이 있는곳 까지 */
+               transform: rotate(1turn) scale(.5, .5);
+               background-color: cadetblue;
+           }
+           100%{
+               transform: none;
+               background-color: cornsilk;
+           }
+       } /* 키프레임은 내가 애니메이션을 생성했다는 것을 알려줌 */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
